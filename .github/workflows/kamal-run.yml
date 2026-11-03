@@ -49,7 +49,5 @@ jobs:
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
           POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
           MEILI_MASTER_KEY: ${{ secrets.MEILI_MASTER_KEY }}
-          SHIPYRD_HOST: ${{ secrets.SHIPYRD_HOST }}
-          SHIPYRD_API_KEY: ${{ secrets.SHIPYRD_API_KEY }}
         run: |
           bundle exec kamal ${{ github.event.inputs.command }}
